@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    height: 300vh;
+
+
+
+}
+
+.top-bar{
+    width: 100%;
+    height: 50px;
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+}
+
+.list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.icon-list{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.icon-list li a{
+    color: white;
+ text-decoration: none;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+    border-bottom: 1px solid orangered;
+
+
+    position: sticky;
+    top: 0px;
+}
+.navbar img{
+    width: 200px;
+}
+.navbar ul{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: green;
+}
+.navbar ul li:first-child{
+    color: rgb(150, 49, 49);
+}
+.hero-section{
+    width: 100%;
+    height: 450px;
+    background-image: url('./assests/download');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px solid green;
+
+}
+.text-part{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-part p{
+    color: yellow;
+    margin-top: 20px;
+
+}
+.text-part h2{
+    color: green;
+    font-size: 60px;
+    margin-top: 20px;
+}
+.text-part h1{
+    color: red;
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.text-part button{
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 3px;
+}
+
+.fixed-icon{
+    height: 400px;
+
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.box:first-child{
+    background-color: red;
+    border-radius: 15px 0px 0px 0px;
+}
+.box:nth-child(2){
+    background-color: green;
+}
+.box:nth-child(3){
+    background-color: blueviolet;
+}
+.box:nth-child(4){
+    background-color: brown;
+}
+.box:last-child{
+    background-color: olive;
+    border-radius:  0px 0px 0px 15px;
+}
+.box:hover{
+    background-color: black;
+    
+}
+
+.navbar span {
+    color: green;
+    display: none;
+}
+
+.service-section{
+    width: 100%;
+    height: auto;
+    background-image: url('./assests/download.png');
+    padding-block: 50px;
+}
+
+.service-section h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.box-container{
+    width: 100%;
+    height: auto;
+    padding-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+
+}
+
+.boxes{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(227, 38, 38);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.circle img{
+    width: 50px;
+}
+
+.boxes h6{
+    font-size: 20px;
+    color: black;
+}
+.boxes p{
+    color: grey;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.text-part button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+/* Responaive Design Code */
+
+
+
+@media (max-width : 768px) {
+
+    
+.main-container{
+    width: 100%;
+    height: auto;
+}
+
+
+.top-bar{
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    padding-block: 20px;
+    
+}
+
+.list{
+    width: 100%;
+    height: auto;
+}
+
+.list li:first-child{
+    display: none;
+}
+.list li:nth-child(2){
+    display: none;
+}
+.icon-list{
+    width: 40%;
+}
+.navbar{
+    width: 100%;
+  
+}
+
+.navbar img{
+    width: 230px;
+}
+.navbar ul{
+    display: none;
+}
+.navbar span{
+    display: inline;
+}
+.fixed-icon{
+    display: none;
+}
+.hero-section{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-part{
+    width: 100%;
+    height: auto;
+}
+
+.text-part h1{
+    font-size: 30px;
+}
+.text-part h2{
+    font-size: 30px;
+}
+
+.text-part button{
+    width: 230px;
+    letter-spacing: 2px;
+}
+.text-part p{
+    font-size: 14px;
+}
+
+.boxes{
+    width: 400px;
+    height: 250px;
+}
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
